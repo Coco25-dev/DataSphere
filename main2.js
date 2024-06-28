@@ -1,13 +1,9 @@
 const form = document.forms.contactForm;
 
-var test = document.getElementById("sendButton");
 form.addEventListener("submit", function (event) {
    event.preventDefault(); // Empêche le rechargement de la page
-});
-test.addEventListener("click", function (event) {
-   event.preventDefault(); // Empêche le rechargement de la page
 
-  var firstname = document.getElementById("firstname");
+    var firstname = document.getElementById("firstname");
   var email = document.getElementById("email");
   var lastname = document.getElementById("lastname");
   var comment = document.getElementById("comment");
@@ -41,7 +37,6 @@ test.addEventListener("click", function (event) {
     console.log(comment);
   }
 });
-
    
 ['search', 'firstname', 'lastname', 'email'].forEach(id => {
     document.getElementById(id).setAttribute('autocomplete', 'off');
