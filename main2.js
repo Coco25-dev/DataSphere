@@ -1,5 +1,11 @@
+
+const form = document.getElementById("form");
+
 var test = document.getElementById("sendButton");
 test.addEventListener("click", function (event) {
+   event.preventDefault(); // Empêche le rechargement de la page
+}
+test.addEventListener("submit", function (event) {
   event.preventDefault(); // Empêche le rechargement de la page
 
   var firstname = document.getElementById("firstname");
@@ -18,11 +24,11 @@ test.addEventListener("click", function (event) {
     warningTexts(firstname, "Le champ Prénom est requis.");
     console.log(firstname);
   }
-  if (lastname.value === "" || lastname === null) {
+  if (lastname.value === "" || lastname.value === null) {
     warningTexts(lastname, "Le champ Nom est requis.");
     console.log(lastname);
   }
-  if (email.value === "" || email === null) {
+  if (email.value === "" || email.value === null) {
     warningTexts(email, "Le champ Email est requis.");
     console.log(email);
   } else {
@@ -31,7 +37,7 @@ test.addEventListener("click", function (event) {
       event.preventDefault(); // Empêche l'envoi du formulaire si l'email n'est pas valide
     }
   }
-  if (comment.value === "" || comment === null) {
+  if (comment.value === "" || comment.value === null) {
     warningTexts(comment, "Le champ Commentaire est requis.");
     console.log(comment);
   }
