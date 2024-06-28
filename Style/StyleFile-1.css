@@ -191,6 +191,7 @@ section {
 
 /* Utilisation d'une classe commune pour l'effet hover des images */
 .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+    z-index: 100;
     transform: scale(1.225);
 }
 
