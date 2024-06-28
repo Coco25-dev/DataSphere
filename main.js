@@ -51,36 +51,7 @@ document.addEventListener("mouseleave", function () {
   setTimeout(function () {
     gif.style.display = "none"; // Cache le GIF après 4,8 secondes
   }, 4800);
-});
-
-
-
-
-// Temps d'activation et de désactivation en millisecondes
-const tempsActivation = 90000; 
-const tempsDesactivation = 30000; 
-
-const gifElement = document.getElementById('myGif');
-const gifSrc = 'myGif.gif';
-const imgStaticSrc = 'imageStatique.jpg'; // Image statique pour remplacer le GIF
-
-// Fonction pour désactiver le GIF
-function desactiverGif() {
-    gifElement.src = imgStaticSrc;
-}
-
-// Fonction pour réactiver le GIF
-function activerGif() {
-    gifElement.src = gifSrc;
-}
-
-// Intervalles pour activer et désactiver le GIF
-setInterval(() => {
-    desactiverGif();
-    setTimeout(activerGif, tempsDesactivation);
-}, tempsActivation + tempsDesactivation);
-
-
+})
 
 
 
