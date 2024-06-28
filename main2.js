@@ -1,10 +1,12 @@
 const form = document.forms.contactForm;
 
 var test = document.getElementById("sendButton");
-test.addEventListener("click", function (event) {
+form.addEventListener("submit", function (event) {
    event.preventDefault(); // Empêche le rechargement de la page
+
+   console.log(coco);
 }
-test.addEventListener("submit", function (event) {
+test.addEventListener("click", function (event) {
   event.preventDefault(); // Empêche le rechargement de la page
 
   var firstname = document.getElementById("firstname");
