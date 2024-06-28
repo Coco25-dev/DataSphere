@@ -83,8 +83,8 @@ document.addEventListener("mouseleave", function () {
 
 
 // Temps d'activation et de désactivation en millisecondes
-const tempsActivation = 30000; 
-const tempsDesactivation = 90000; 
+const tempsActivation = 90000; 
+const tempsDesactivation = 30000; 
 
 const gifElement = document.getElementById('myGif');
 const gifSrc = 'myGif.gif';
