@@ -3,7 +3,7 @@ const form = document.forms.contactForm;
 var test = document.getElementById("sendButton");
 form.addEventListener("submit", function (event) {
    event.preventDefault(); // Empêche le rechargement de la page
-}
+});
 test.addEventListener("click", function (event) {
    event.preventDefault(); // Empêche le rechargement de la page
 
