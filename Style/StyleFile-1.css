@@ -1,0 +1,222 @@
+
+body {
+    background-image: url("/Style/Something new (1).png"); /* Correction du chemin et des échappements */
+    background-size: cover;
+    margin: 8vh;
+}
+
+h1 {
+    color: white;
+    font: italic bold 50px verdana, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 5px 3px 5.5px #8AA7BC;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 170%;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 165%;
+    font-style: italic;
+    margin-top: 6vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    padding: 5vh;
+    border-radius: 120px;
+    box-shadow: 3px 3px 15px #8AA7BC;
+}
+
+p {
+    color: white;
+    font-size: 150%;
+    margin: 10vh;
+}
+
+.pdown {
+    text-decoration: underline;
+}
+
+/* Utilisation d'une classe commune pour les ombres de texte */
+.shadow-text {
+    text-shadow: 5px 3px 5.5px #8AA7BC;
+    color: white;
+    text-decoration: underline;
+}
+
+#myform {
+    display: flex;
+    margin: 0 auto; /* Centre horizontalement */
+    margin-top: 60px;
+    background-color: #352F4C;
+    width: 720px;
+    height: 360px;
+    border-radius: 50px;
+    padding: 20px;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#myGif {
+    display: none; /* Le GIF est caché par défaut */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#scrollTopBtn {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Fixé en bas à droite */
+    bottom: 80px;
+    right: 30px;
+    z-index: 99; /* Assure que le bouton reste au-dessus des autres éléments */
+    border: none;
+    outline: none;
+    background-color: #8AA7BC; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    cursor: pointer;
+    padding: 17px;
+    border-radius: 80px; /* Rond */
+    font-size: 50px; /* Taille de la flèche */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+
+#scrollTopBtn:hover {
+    background-color: #555; /* Couleur au survol */
+}
+
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 42%;
+}
+
+.firstname {
+    width: 270px;
+    height: 30px;
+}
+
+.lastname {
+    width: 270px;
+    height: 30px;
+}
+
+.boxmail {
+    width: 270px;
+    height: 30px;
+}
+
+.sectionh1 {
+    background-image: url("/Style/backgroundTop.png");
+    background-size: cover;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex-basis: 70%;
+}
+
+input.inputformulary, .textareaformulary {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 5px;
+}
+
+textarea.textareaformulary {
+    resize: none;
+    width: 320px;
+    height: 190px;
+}
+
+.inputsend {
+    width: 210px;
+    height: 50px;
+    border-radius: 16px;
+    border: none;
+    background-color: #8AA7BC;
+    color: white;
+    font-weight: bold;
+    transition: transform 1.5s ease-in-out;
+    margin-top: 5px;
+    align-self: center; /* Aligner le bouton à droite */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.inputsend:hover {
+    animation: pulse 1.5s infinite;
+}
+
+section {
+    padding: 20px;
+    border: 4px solid #302944;
+    border-radius: 15px;
+}
+
+.container-images {
+    border-radius: 5px;
+    display: flex; /* Suppression du duplicat */
+    flex-direction: column; /* Suppression du duplicat */
+}
+
+.container-images img {
+    width: 620px;
+    height: 330px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Utilisation d'une classe commune pour l'effet hover des images */
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+    transform: scale(1.225);
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 6.2px solid #8AA7BC;
+    border-radius: 50px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.ccc {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-group1, .container-group2, .container-group3 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+    margin-right: 70px;
+}
