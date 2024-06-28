@@ -1,9 +1,9 @@
 const form = document.forms.contactForm;
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("click", function (event) {
    event.preventDefault(); // Empêche le rechargement de la page
 
-    var firstname = document.getElementById("firstname");
+  var firstname = document.getElementById("firstname");
   var email = document.getElementById("email");
   var lastname = document.getElementById("lastname");
   var comment = document.getElementById("comment");
