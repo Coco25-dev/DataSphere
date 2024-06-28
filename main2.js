@@ -1,5 +1,4 @@
-
-const form = document.getElementById("form");
+const form = document.forms.contactForm;
 
 var test = document.getElementById("sendButton");
 test.addEventListener("click", function (event) {
