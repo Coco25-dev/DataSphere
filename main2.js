@@ -4,10 +4,8 @@ var test = document.getElementById("sendButton");
 form.addEventListener("submit", function (event) {
    event.preventDefault(); // Empêche le rechargement de la page
 
-   console.log(coco);
-}
 test.addEventListener("click", function (event) {
-  event.preventDefault(); // Empêche le rechargement de la page
+   event.preventDefault(); // Empêche le rechargement de la page
 
   var firstname = document.getElementById("firstname");
   var email = document.getElementById("email");
@@ -44,6 +42,7 @@ test.addEventListener("click", function (event) {
   }
 });
 
+   
 ['search', 'firstname', 'lastname', 'email'].forEach(id => {
     document.getElementById(id).setAttribute('autocomplete', 'off');
 });
