@@ -24,32 +24,6 @@ function melange(tab) {
 console.log(melange([1,2,3,4,5,6]));
 */
 
-// Données à envoyer au serveur
-/* var formData = {
-        firstname: firstname,
-        lastname: lastname,
-        email: email,
-        comment: comment
-    };
-    
-    // Envoi des données au serveur
-    fetch('https://example.com/submit', { // Remplacez par votre URL de serveur
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Traitement de la réponse du serveur
-        document.getElementById('message').innerHTML = `<p style="color: green;">Succès: ${data.message}</p>`;
-    })
-    .catch(error => {
-        // Gestion des erreurs
-        document.getElementById('message').innerHTML = `<p style="color: red;">Erreur: ${error.message}</p>`;
-    });
-
 
 
 function ajouterGif(src, left, top) {
@@ -106,7 +80,6 @@ setInterval(() => {
     setTimeout(activerGif, tempsDesactivation);
 }, tempsActivation + tempsDesactivation);
 
-*/
 
 
 
