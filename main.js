@@ -49,7 +49,7 @@ console.log(melange([1,2,3,4,5,6]));
         // Gestion des erreurs
         document.getElementById('message').innerHTML = `<p style="color: red;">Erreur: ${error.message}</p>`;
     });
-*/
+
 
 
 function ajouterGif(src, left, top) {
@@ -106,7 +106,7 @@ setInterval(() => {
     setTimeout(activerGif, tempsDesactivation);
 }, tempsActivation + tempsDesactivation);
 
-
+*/
 
 
 
