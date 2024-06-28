@@ -80,6 +80,37 @@ document.addEventListener("mouseleave", function () {
 });
 
 
+
+
+// Temps d'activation et de désactivation en millisecondes
+const tempsActivation = 30000; 
+const tempsDesactivation = 90000; 
+
+const gifElement = document.getElementById('myGif');
+const gifSrc = 'myGif.gif';
+const imgStaticSrc = 'imageStatique.jpg'; // Image statique pour remplacer le GIF
+
+// Fonction pour désactiver le GIF
+function desactiverGif() {
+    gifElement.src = imgStaticSrc;
+}
+
+// Fonction pour réactiver le GIF
+function activerGif() {
+    gifElement.src = gifSrc;
+}
+
+// Intervalles pour activer et désactiver le GIF
+setInterval(() => {
+    desactiverGif();
+    setTimeout(activerGif, tempsDesactivation);
+}, tempsActivation + tempsDesactivation);
+
+
+
+
+
+
 // Obtenez le bouton
 let scrollTopBtn = document.getElementById("scrollTopBtn");
 
