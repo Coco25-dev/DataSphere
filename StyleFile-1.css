@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("../Style/Something new (1).png"); /* Correction du chemin et des échappements */
+    background-image: url("./../Style/Something new (1).png"); /* Correction du chemin et des échappements */
     background-size: cover;
     margin: 8vh;
 }
@@ -114,7 +114,7 @@ p {
 }
 
 .sectionh1 {
-    background-image: url("../Style/backgroundTop.png");
+    background-image: url("./../Style/backgroundTop.png");
     background-size: cover;
 }
 
