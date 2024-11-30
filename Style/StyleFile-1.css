@@ -113,11 +113,6 @@ p {
     height: 30px;
 }
 
-.sectionh1 {
-    background-image: url("backgroundTop.png");
-    background-size: cover;
-}
-
 .form-group {
     display: flex;
     flex-direction: column;
