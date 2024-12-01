@@ -22,6 +22,11 @@ function melange(tab) {
 }
 console.log(melange([1,2,3,4,5,6]));
 
+    <img
+    id="myGif"
+    src="Style/dog-awkward.gif"
+    alt="GIF"
+    />
 
 function ajouterGif(src, left, top) {
     var gif = document.createElement('img');
