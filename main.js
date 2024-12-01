@@ -9,7 +9,6 @@ for (var i=3; i < tab.length; i++){        /*si i-- le PC crash
 }
 console.log(total);
 
-
 function melange(tab) {
     var temp = 0;
     var random = 0;
@@ -22,8 +21,6 @@ function melange(tab) {
     return tab
 }
 console.log(melange([1,2,3,4,5,6]));
-*/
-
 
 
 function ajouterGif(src, left, top) {
@@ -39,8 +36,6 @@ function ajouterGif(src, left, top) {
         gif.remove();
     }, 10000);
 }
-
-
 document.addEventListener("mouseleave", function () {
   var gif = document.getElementById("myGif");               // Trad : Qu’est-ce que tu vas faire ?
   gif.style.display = "block"; // Affiche le GIF
@@ -52,15 +47,12 @@ document.addEventListener("mouseleave", function () {
     gif.style.display = "none"; // Cache le GIF après 4,8 secondes
   }, 4800);
 })
-
-
+*/
 
 // Obtenez le bouton
 let scrollTopBtn = document.getElementById("scrollTopBtn");
-
 // Lorsque l'utilisateur scroll vers le bas de 20px, affichez le bouton
 window.onscroll = function() { scrollFunction() };
-
 function scrollFunction() {
     const height =  document.body.scrollHeight / 5;
     console.log (height);
@@ -70,15 +62,11 @@ function scrollFunction() {
         scrollTopBtn.style.display = "none";
     }
 }
-
 // Lorsque l'utilisateur clique sur le bouton, scrollez en haut de la page
 scrollTopBtn.onclick = function() {
     document.body.scrollTop = 0; // Pour Safari
     document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
 }
-
-
-
 const leInput = document.querySelector("input");
 
 leInput.addEventListener("focus", function () {
