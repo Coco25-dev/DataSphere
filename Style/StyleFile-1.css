@@ -243,3 +243,11 @@ img {
   height: auto;
 }
 
+/* Exemple de media query */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
