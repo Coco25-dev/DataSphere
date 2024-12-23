@@ -10,6 +10,8 @@ h1 {
     text-decoration: underline;
     text-align: center;
     text-shadow: 5px 3px 5.5px #8AA7BC;
+    font-size: 2.5rem; /* Taille de police relative */
+    margin: 0 auto;
 }
 
 h2 {
@@ -50,14 +52,15 @@ p {
 
 #myform {
     display: flex;
-    margin: 0 auto; /* Centre horizontalement */
+    margin: 20 px auto;
     margin-top: 60px;
     background-color: #352F4C;
-    width: 720px;
-    height: 360px;
+    max-width: 90%; /* Largeur maximale pour les petits écrans */
     border-radius: 50px;
     padding: 20px;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Permet d'adapter le formulaire sur plusieurs lignes si nécessaire */
+    justify-content: space-between;
+    grap: 20 px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -175,11 +178,10 @@ section {
 }
 
 .container-images img {
-    width: 620px;
-    height: 330px;
-    object-fit: cover;
-    margin: 20px;
-    border-radius: 50px;
+    width: 100%; /* L'image prend toute la largeur de son conteneur */
+    max-width: 620px; /* Taille maximale pour les grands écrans */
+    height: auto; /* Préserve le ratio */
+    border-radius: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -264,12 +266,30 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
- @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
+ /* Pour les écrans de moins de 600px */
+@media (max-width: 600px) {
+    body {
+        margin: 5vh; /* Réduction des marges */
+    }
+    h1 {
+        font-size: 2rem; /* Police plus petite */
+    }
+    #myform {
+        flex-direction: column; /* Le formulaire passe en une colonne */
+        padding: 10px;
+    }
+    .container-images {
+        flex-direction: column; /* Images empilées verticalement */
+        margin: 0 auto;
+    }
+    .search-input {
+        width: 100%; /* Champ de recherche ajusté à la largeur disponible */
+        margin: 10px 0;
+    }
+}
 
-            .card {
-                text-align: center;
-            }
- }
+img {
+    width: 100%; /* L'image occupe toute la largeur du conteneur */
+    max-width: 500px; /* Limite maximale pour éviter une trop grande expansion */
+    height: auto; /* Préserve le ratio */
+}
