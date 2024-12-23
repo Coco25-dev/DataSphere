@@ -1,10 +1,9 @@
-
 body {
     background-image: url("Something-new (1).png"); /* Correction du chemin et des échappements */
     background-size: cover;
     margin: 8vh;
 }
-
+ 
 h1 {
     color: white;
     font: italic bold 50px verdana, sans-serif;
@@ -245,7 +244,7 @@ section {
     box-sizing: border-box;
         }
 
-.container {
+.main container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
