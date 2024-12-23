@@ -238,16 +238,54 @@ section {
     font-size: 2.5em;
     margin: 0 0 10px;
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+.container {
+  width: 80%; /* 80% de la largeur du parent */
+  font-size: 1.5rem; /* Proportionnel à la taille de police racine */
 }
 
-/* Exemple de media query */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  flex: 1 1 30%; /* Taille proportionnelle : 30% du conteneur */
+}
+
+.box {
+  width: calc(50% - 20px); /* 50% du conteneur moins 20px de marge */
+  height: calc(100vh - 100px); /* Proportionnel à la hauteur de la fenêtre */
+}
+
+.text {
+  font-size: clamp(1rem, 2.5vw, 3rem); /* Min : 1rem, idéal : 2.5% de la largeur de l’écran, max : 3rem */
+}
+
+.ratio-container {
+  position: relative;
+  width: 100%; /* Toujours adaptatif */
+  padding-top: 56.25%; /* Ratio 16:9 (9/16 * 100) */
+}
+
+.ratio-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-    margin: 0;
+  .container {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    font-size: 2rem;
   }
 }
 
