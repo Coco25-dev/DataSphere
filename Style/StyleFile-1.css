@@ -1,107 +1,112 @@
-body {
-    background-image: url("Something-new (1).png"); /* Correction du chemin et des échappements */
-    background-size: cover;
-    margin: 8vh;
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- 
+
+/* Corps de la page */
+body {
+    background-image: url("Something-new (1).png");
+    background-size: cover;
+    margin: 8vh 5vw; /* Utilisation d'unités relatives */
+    font-size: 1rem; /* Taille de base ajustable */
+    line-height: 1.5;
+}
+
+/* Titres */
 h1 {
     color: white;
-    font: italic bold 50px verdana, sans-serif;
+    font: italic bold 2.5rem verdana, sans-serif; /* Police relative */
     text-decoration: underline;
     text-align: center;
     text-shadow: 5px 3px 5.5px #8AA7BC;
-    font-size: 2.5rem; /* Taille de police relative */
-    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 h3 {
     color: white;
     text-align: center;
-    font-size: 2.5rem; /* Taille de police relative */
     font-style: italic;
-    margin: 20px;
-    padding: 5vh;
-    max-width: 90%; /* Limiter la largeur */
+    margin: 1rem auto;
+    padding: 5vh 2vw; /* Marges et padding adaptatifs */
+    max-width: 90%;
     border-radius: 50px;
     box-shadow: 3px 3px 15px #8AA7BC;
+    font-size: 2rem; /* Police relative */
 }
 
+/* Boutons et éléments interactifs */
 .pdown {
     text-decoration: underline;
     color: white;
-    font-size: 2.5rem; /* Taille de police relative */
-    margin: 20px;
-}
-
-/* Utilisation d'une classe commune pour les ombres de texte */
-.shadow-text {
-    text-shadow: 5px 3px 5.5px #8AA7BC;
-    color: white;
-    text-decoration: underline;
-}
-
-#myform {
-    display: block;
-    background-color: #352F4C;
-    border-radius: 50px;
-    flex-wrap: wrap; /* Permet d'adapter le formulaire sur plusieurs lignes si nécessaire */
-    justify-content: space-between;
-    position: center;
-    padding: 20px; /* Ajouter de l'espace intérieur */
-    width: 120vh;
-    height: 100vh;
-}
-
-#myGif {
-    display: none; /* Le GIF est caché par défaut */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
+    font-size: 2rem;
+    margin: 1rem;
 }
 
 #scrollTopBtn {
-    display: none; /* Caché par défaut */
-    position: fixed; /* Fixé en bas à droite */
+    display: none;
+    position: fixed;
     bottom: 80px;
     right: 30px;
-    z-index: 99; /* Assure que le bouton reste au-dessus des autres éléments */
+    z-index: 99;
     border: none;
-    outline: none;
-    background-color: #8AA7BC; /* Couleur de fond */
-    color: white; /* Couleur du texte */
+    background-color: #8AA7BC;
+    color: white;
     cursor: pointer;
-    padding: 17px;
-    border-radius: 80px; /* Rond */
-    font-size: 50px; /* Taille de la flèche */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
+    padding: 1rem;
+    border-radius: 50px;
+    font-size: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #scrollTopBtn:hover {
-    background-color: #555; /* Couleur au survol */
+    background-color: #555;
 }
 
-.form-left, .form-right {
+/* Conteneurs flexibles */
+.container-images-1,
+.container-images-2,
+.container-images-3,
+.container-images-4,
+.container-images-5,
+.container-images-6 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 1rem;
 }
 
-.firstname {
-    width: 15%;
-    height: 5%;
+.container-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
 }
-.lastname {
-    width: 15%;
-    height: 5%;
+
+.container-images img:hover {
+    transform: scale(1.2);
 }
-.boxmail {
-    width: 40%;
-    height: 25%;
+
+/* Formulaire */
+#myform {
+    display: flex;
+    flex-direction: column;
+    background-color: #352F4C;
+    border-radius: 50px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .inputsend {
-    width: 210px;
+    width: 100%;
+    max-width: 300px;
     height: 50px;
     border-radius: 16px;
     border: none;
@@ -109,192 +114,74 @@ h3 {
     color: white;
     font-weight: bold;
     transition: transform 1.5s ease-in-out;
-    margin-top: 5px;
-    align-self: center; /* Aligner le bouton à droite */
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.9);
-    }
-    50% {
-        transform: scale(1.3);
-    }
-    100% {
-        transform: scale(0.9);
-    }
+    margin-top: 1rem;
+    align-self: center;
 }
 
 .inputsend:hover {
     animation: pulse 1.5s infinite;
 }
 
+/* Zones de texte */
 input[type="text"],
 input[type="email"],
 textarea {
     display: block;
-    width: 100%; /* Occuper toute la largeur disponible */
-    margin: 10px 0; /* Ajouter de l'espacement entre chaque champ */
-    padding: 10px; /* Améliorer l'accessibilité */
-    border: 1px solid #ccc; /* Bordure discrète */
-    border-radius: 5px; /* Bord arrondi */
-    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 textarea {
-    height: 100px; /* Taille par défaut de la zone de commentaire */
+    height: 100px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px; /* Espacement avec le champ associé */
-    font-weight: bold; /* Mettre en évidence */
-}
-
-section {
-    padding: 20px;
-    border: 4px solid #8AA7BC;
-    border-radius: 15px;
-}
-
-.container-images-1, .container-images-2, .container-images-3, .container-images-4, .container-images-5, .container-images-6 {
-    display: flex; /* Suppression du duplicat */
-    flex-direction: column; /* Suppression du duplicat */
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 25px;
-    margin-left: 70px;
-    margin-right: 70px;
-    
-}
-
-.container-images img {
-    width: 100%; /* L'image prend toute la largeur de son conteneur */
-    max-width: 620px; /* Taille maximale pour les grands écrans */
-    height: auto; /* Préserve le ratio */
-    border-radius: 25px;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Utilisation d'une classe commune pour l'effet hover des images */
-.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
-    z-index: 100;
-    transform: scale(1.2);
-}
-
-.search-container {
-    align-items: center;
-    width: 300px;
-    margin: 20px;
-}
-
-.search-input {
-    width: 100%;
-    padding: 10px;
-    border: 6.2px solid #8AA7BC;
-    border-radius: 50px;
-    margin-top: 45px;
-    margin-bottom: 45px;
-}
-
-.ccc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Bannière */
 .banner {
-    background-image: url('https://i.pinimg.com/736x/1f/31/48/1f31484eb94a802f5d6065b7b059435e.jpg'); /* Remplacez par l'URL de votre image */
+    background-image: url('https://i.pinimg.com/736x/1f/31/48/1f31484eb94a802f5d6065b7b059435e.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 5vh 5vw; /* Utilisation d'unités relatives */
-    height: 15vh; /* Hauteur relative à la hauteur de la fenêtre */
+    padding: 5vh 5vw;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box; /* Pour inclure les paddings dans la hauteur totale */
-}
-
-/* Média query pour les petits écrans */
-@media (max-width: 768px) {
-    .banner {
-        padding: 10vh 3vw; /* Plus d'espace sur petits écrans */
-        height: 15vh; /* Augmentation de la hauteur pour les petits écrans */
-        font-size: 1rem; /* Ajustement de la taille du texte si nécessaire */
-    }
-}
-
-.banner-content {
-    max-width: 800px;
+    box-sizing: border-box;
 }
 
 .banner h1 {
-    font-size: 2.5em;
-    margin: 0 0 10px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-        }
-
-.main_container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-        }
-
- /* Pour les écrans de moins de 600px */
-@media (max-width: 600px) {
+/* Média queries pour petits écrans */
+@media (max-width: 768px) {
     body {
-        margin: 5vh; /* Réduction des marges */
+        margin: 5vh 2vw;
     }
     h1 {
-        font-size: 2rem; /* Police plus petite */
+        font-size: 2rem;
     }
     #myform {
-        flex-direction: column; /* Le formulaire passe en une colonne */
-        padding: 10px;
+        padding: 1rem;
     }
     .container-images {
-        flex-direction: column; /* Images empilées verticalement */
-        margin: 0 auto;
-    }
-    .search-input {
-        width: 100%; /* Champ de recherche ajusté à la largeur disponible */
-        margin: 10px 0;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
-    #h3TitleTop {
-        font-size: 1rem; /* Réduire la taille de la police */
-        line-height: 1.3; /* Réduire l'espacement vertical */
-        padding: 5px; /* Réduire les marges internes */
-    }
-    img {
-        max-width: 100%; /* S'assurer que les images s'adaptent à l'écran */
-    }
-    form {
-        padding: 10px; /* Réduire le padding pour les petits écrans */
+    h1 {
+        font-size: 1.5rem;
     }
     input[type="text"],
     input[type="email"],
     textarea {
-        font-size: 1rem; /* Réduire légèrement la taille de la police */
+        font-size: 0.9rem;
     }
-    body {
-        margin: 0; /* Supprimer les marges excessives */
-        padding: 0 10px; /* Espacement latéral minimal */
-    }
-}
-
-img {
-    display: block; /* S'assurer que les images ne s'affichent pas inline */
-    margin: 20px auto; /* Centrer et espacer */
-    max-width: 90%; /* Éviter qu'elles dépassent les bords de l'écran */
-    height: auto; /* Maintenir les proportions */
 }
