@@ -14,42 +14,23 @@ h1 {
     margin: 0 auto;
 }
 
-h2 {
-    color: white;
-    text-align: center;
-    font-size: 170%;
-}
-
 h3 {
     color: white;
     text-align: center;
-    font-size: 165%;
+    font-size: 2.5rem; /* Taille de police relative */
     font-style: italic;
-    margin-top: 6vh;
-    margin-left: 15vh;
-    margin-right: 15vh;
-    padding: 20px;
+    margin: 20px;
+    padding: 5vh;
+    max-width: 90%; /* Limiter la largeur */
     border-radius: 50px;
     box-shadow: 3px 3px 15px #8AA7BC;
 }
 
-#h3TitleTop {
-    text-align: center; /* Centrer le texte */
-    font-size: 1.2rem; /* Taille de police adaptée pour les petits écrans */
-    line-height: 1.5; /* Améliorer l'espacement vertical */
-    max-width: 90%; /* Limiter la largeur */
-    margin: 0 auto; /* Centrer le conteneur */
-    padding: 10px; /* Ajouter de l'espace autour */
-}
-
-p {
-    color: white;
-    font-size: 150%;
-    margin: 10vh;
-}
-
 .pdown {
     text-decoration: underline;
+    color: white;
+    font-size: 2.5rem; /* Taille de police relative */
+    margin: 20px;
 }
 
 /* Utilisation d'une classe commune pour les ombres de texte */
@@ -104,43 +85,19 @@ p {
 .form-left, .form-right {
     display: flex;
     flex-direction: column;
-    flex-basis: 42%;
 }
 
 .firstname {
     width: 15%;
     height: 5%;
 }
-
 .lastname {
     width: 15%;
     height: 5%;
 }
-
 .boxmail {
     width: 40%;
     height: 25%;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    flex-basis: 70%;
-}
-
-input.inputformulary, .textareaformulary {
-    width: 100%;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    margin-top: 5px;
-}
-
-textarea.textareaformulary {
-    resize: none;
-    width: 320px;
-    height: 190px;
 }
 
 .inputsend {
@@ -200,17 +157,11 @@ section {
     border-radius: 15px;
 }
 
-.container {
-    max-width: 100%; /* Éviter les débordements */
-    margin: 0 auto; /* Centrer le contenu */
-    padding: 10px; /* Ajouter un espacement intérieur */
-}
-
 .container-images-1, .container-images-2, .container-images-3, .container-images-4, .container-images-5, .container-images-6 {
     display: flex; /* Suppression du duplicat */
     flex-direction: column; /* Suppression du duplicat */
     justify-content: space-between;
-    positon: center;
+    align-items: center;
     border-radius: 25px;
     margin-left: 70px;
     margin-right: 70px;
@@ -228,11 +179,11 @@ section {
 /* Utilisation d'une classe commune pour l'effet hover des images */
 .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
     z-index: 100;
-    transform: scale(1.225);
+    transform: scale(1.2);
 }
 
 .search-container {
-    position: center;
+    align-items: center;
     width: 300px;
     margin: 20px;
 }
@@ -249,7 +200,7 @@ section {
 .ccc {
     display: flex;
     flex-direction: column;
-    positon: center;
+    align-items: center;
 }
 
 .banner {
@@ -290,18 +241,10 @@ section {
     box-sizing: border-box;
         }
 
-.main container {
+.main_container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-        }
-
-.card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
  /* Pour les écrans de moins de 600px */
@@ -355,4 +298,3 @@ img {
     max-width: 90%; /* Éviter qu'elles dépassent les bords de l'écran */
     height: auto; /* Maintenir les proportions */
 }
-
