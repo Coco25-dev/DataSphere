@@ -108,18 +108,18 @@ p {
 }
 
 .firstname {
-    width: 270px;
-    height: 30px;
+    width: 15%;
+    height: 5%;
 }
 
 .lastname {
-    width: 270px;
-    height: 30px;
+    width: 15%;
+    height: 5%;
 }
 
 .boxmail {
-    width: 270px;
-    height: 30px;
+    width: 40%;
+    height: 25%;
 }
 
 .form-group {
