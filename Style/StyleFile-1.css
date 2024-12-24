@@ -60,14 +60,15 @@ p {
 }
 
 #myform {
-    display: flex;
+    display: block;
     background-color: #352F4C;
     border-radius: 50px;
     flex-wrap: wrap; /* Permet d'adapter le formulaire sur plusieurs lignes si nécessaire */
     justify-content: space-between;
     position: center;
     padding: 20px; /* Ajouter de l'espace intérieur */
-    max-width: 90%; /* Largeur limitée pour les petits écrans */
+    width: 270vh;
+    height: 30vh;
 }
 
 #myGif {
