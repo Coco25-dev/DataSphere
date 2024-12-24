@@ -137,14 +137,12 @@ input.inputformulary, .textareaformulary {
     border-radius: 15px;
     border: none;
     margin-top: 5px;
-    position: center;
 }
 
 textarea.textareaformulary {
     resize: none;
     width: 320px;
     height: 190px;
-    position: center;
 }
 
 .inputsend {
