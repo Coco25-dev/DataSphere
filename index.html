@@ -21,15 +21,15 @@
   </head>
   
   <body>
-<div class="main container">
+<div class="main_container">
       <header class="banner">
           <div class="banner-content">
-              <h1 id="montitre">- DataSphere -</h1>
+              <h1>- DataSphere -</h1>
           </div>
       </header>
   <br>
   <br>
-          <h3 id="h3TitleTop">
+          <h3>
                   Bienvenue sur DataSphere! Où la technologie rencontre le fun... et où les
                 circuits imprimés ne sont jamais ennuyants! Salut les technophiles ! Vous
                êtes tombés sur votre nouveau QG pour tout ce qui fait bip, boum, et
@@ -103,51 +103,39 @@
       </div>
     </div>
         
-    <form id = "myform" name = "contactForm">
+    <form id = "myform">
       <div class="form-left">
-        <div class="form-group">
           <label for="firstname" class="shadow-text">Prénom:</label>
           <input
             type="text"
             id="firstname"
-            class="inputformulary firstname"
             placeholder="Entrez un prénom"
             required
           />
-        </div>
-        <div class="form-group">
           <label for="lastname" class="shadow-text">Nom:</label>
           <input
             type="text"
             id="lastname"
-            class="inputformulary lastname"
             placeholder="Entrez un nom"
             required
           />
-        </div>
-        <div class="form-group">
           <label for="boxmail" class="shadow-text">E-mail:</label>
           <input
             type="email"
             id="email"
-            class="inputformulary boxmail"
             placeholder="Entrez un e-mail"
             required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           />
-        </div>
       </div>
       <div class="form-right">
-        <div class="form-group textarea-group">
           <label for="comment" class="shadow-text">Commentaire:</label>
           <textarea
             id="comment"
-            class="textareaformulary"
             minlength="2"
             maxlength="390"
             placeholder="M'exprimer"
             required
           ></textarea>
-        </div>
         <button id="sendButton" type="submit" class="inputsend">Envoyer</button>
       </div>
     </form>
