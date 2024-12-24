@@ -76,7 +76,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     border-radius: 25px;
-    width: 80%;
+    width: 70%;
     max-width: 600px;
     margin: 0 auto 1rem;
 }
@@ -89,7 +89,7 @@ h3 {
 }
 
 .container-images img:hover {
-    transform: scale(1.2);
+    transform: scale(1.0);
 }
 
 /* Formulaire */
