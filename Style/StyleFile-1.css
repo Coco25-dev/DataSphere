@@ -72,13 +72,14 @@ h3 {
 .container-images-5,
 .container-images-6 {
     display: flex;
+    position: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
     width: 70%;
     height: 12%;
-    margin: 0 auto 3rem;
+    margin: 2rem auto;
 }
 
 .container-images img {
@@ -110,9 +111,9 @@ h3 {
 }
 
 .search-container {
-    align-items: center;
+    position: center;
     max-width: 40%;
-    border: 4px solid #8AA7BC
+    border: 10px solid #8AA7BC
     border-radius: 15px;
 }
 
