@@ -104,6 +104,11 @@ h3 {
     margin: 0 auto;
 }
 
+#colorform {
+    color: white;
+    font-weight: bold;
+}
+
 .search-container {
     align-items: center;
     max-width: 40%;
