@@ -1,3 +1,10 @@
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Corps de la page */
 body {
     background-image: url("Something-new (1).png");
