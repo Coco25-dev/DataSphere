@@ -189,11 +189,12 @@ section {
 .container-images-1, .container-images-2, .container-images-3, .container-images-4, .container-images-5, .container-images-6 {
     display: flex; /* Suppression du duplicat */
     flex-direction: column; /* Suppression du duplicat */
-    justify-content: space-around;
+    justify-content: space-between;
     positon: center;
     border-radius: 25px;
     margin-left: 70px;
     margin-right: 70px;
+    
 }
 
 .container-images img {
