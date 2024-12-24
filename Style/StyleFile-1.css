@@ -28,7 +28,7 @@ h3 {
     color: white;
     text-align: center;
     font-style: italic;
-    margin: 1rem auto;
+    margin: 2rem auto;
     padding: 5vh 2vw; /* Marges et padding adaptatifs */
     max-width: 90%;
     border-radius: 50px;
@@ -47,8 +47,8 @@ h3 {
 #scrollTopBtn {
     display: none;
     position: fixed;
-    bottom: 80px;
-    right: 30px;
+    bottom: 80vh;
+    right: 30vh;
     z-index: 99;
     border: none;
     background-color: #8AA7BC;
@@ -75,7 +75,7 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 50px;
     width: 70%;
     height: 12%;
     margin: 0 auto 3rem;
