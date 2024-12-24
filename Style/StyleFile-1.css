@@ -69,7 +69,7 @@ p {
     padding: 20px;
     flex-wrap: wrap; /* Permet d'adapter le formulaire sur plusieurs lignes si nécessaire */
     justify-content: space-between;
-    grap: 20 px;
+    grip: 20 px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -186,17 +186,18 @@ section {
     padding: 10px; /* Ajouter un espacement intérieur */
 }
 
-.container-images {
-    border-radius: 5px;
+.container-images-1, .container-images-2, .container-images-3, .container-images-4, .container-images-5, .container-images-6 {
     display: flex; /* Suppression du duplicat */
     flex-direction: column; /* Suppression du duplicat */
+    justify-content: space-around;
+    positon: center;
 }
 
 .container-images img {
     width: 100%; /* L'image prend toute la largeur de son conteneur */
     max-width: 620px; /* Taille maximale pour les grands écrans */
     height: auto; /* Préserve le ratio */
-    border-radius: 15px;
+    border-radius: 25px;
     transition: transform 0.3s ease-in-out;
 }
 
