@@ -239,11 +239,21 @@ section {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 50px 20px;
-    height: 300px; /* Ajustez selon vos besoins */
+    padding: 5vh 5vw; /* Utilisation d'unités relatives */
+    height: 30vh; /* Hauteur relative à la hauteur de la fenêtre */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Pour inclure les paddings dans la hauteur totale */
+}
+
+/* Média query pour les petits écrans */
+@media (max-width: 768px) {
+    .banner {
+        padding: 10vh 3vw; /* Plus d'espace sur petits écrans */
+        height: 40vh; /* Augmentation de la hauteur pour les petits écrans */
+        font-size: 1rem; /* Ajustement de la taille du texte si nécessaire */
+    }
 }
 
 .banner-content {
