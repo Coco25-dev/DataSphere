@@ -137,12 +137,14 @@ input.inputformulary, .textareaformulary {
     border-radius: 15px;
     border: none;
     margin-top: 5px;
+    position: center;
 }
 
 textarea.textareaformulary {
     resize: none;
     width: 320px;
     height: 190px;
+    position: center;
 }
 
 .inputsend {
@@ -191,6 +193,9 @@ section {
     flex-direction: column; /* Suppression du duplicat */
     justify-content: space-around;
     positon: center;
+    border-radius: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .container-images img {
@@ -226,13 +231,6 @@ section {
     display: flex;
     flex-direction: column;
     positon: center;
-}
-
-.container-group1, .container-group2, .container-group3 {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 70px;
-    margin-right: 70px;
 }
 
 .banner {
