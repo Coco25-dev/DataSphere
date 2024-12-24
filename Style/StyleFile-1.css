@@ -207,7 +207,7 @@ section {
 }
 
 .search-container {
-    position: relative;
+    position: center;
     width: 300px;
     margin: 20px;
 }
@@ -224,6 +224,7 @@ section {
 .ccc {
     display: flex;
     flex-direction: column;
+    positon: center;
 }
 
 .container-group1, .container-group2, .container-group3 {
