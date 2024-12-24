@@ -89,7 +89,7 @@ h3 {
 }
 
 .container-images img:hover {
-    transform: scale(1.0);
+    transform: scale(1.2);
 }
 
 /* Formulaire */
