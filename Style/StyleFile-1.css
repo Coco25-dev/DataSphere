@@ -107,10 +107,7 @@ h3 {
 .search-container {
     align-items: center;
     max-width: 40%;
-}
-
-.section {
-    border: 4px solid #8AA7BC;
+    border: 4px solid #8AA7BC
     border-radius: 15px;
 }
 
