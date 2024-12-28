@@ -37,6 +37,7 @@ body {
 }
 
 .content {
+  font: italic bold;
   font-size: 1rem;
   max-width: 80%; /* Ajustez la largeur pour un design responsive */
   margin-top: 6.5rem;
@@ -44,7 +45,7 @@ body {
   margin-right: 10rem;
   padding: 20px;
   text-align: center;
-  color: black;
+  color: white;
   box-shadow: 1px 1px 7px 7px #8AA7BC;
   border-radius: 20px;
 }
@@ -127,6 +128,7 @@ form {
 
 .Nom, .Prenom, .Email, .Commentaire {
   color: white;
+  text-decoration: underline;
 }
 
 form label {
