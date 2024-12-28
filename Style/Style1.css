@@ -1,0 +1,179 @@
+body {
+  background-image: url('https://i.pinimg.com/736x/d3/26/9d/d3269ddadc8838e82bd90786e5b4cbff.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer horizontalement tout le contenu */
+  width: 100%; /* Important pour que le contenu s'adapte */
+  min-height: 100vh; /* Pour occuper toute la hauteur de l'écran */
+}
+
+ .banniere {
+  position: fixed; /* La bannière reste fixe */
+  top: 0; /* Elle reste en haut de la page */
+  left: 0; /* Commence à partir du bord gauche */
+  width: 100%; /* Prend toute la largeur de l'écran */
+  background-image: url('https://i.pinimg.com/736x/1f/31/48/1f31484eb94a802f5d6065b7b059435e.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center; /* Centrer le texte */
+  padding: 10px 0; /* Espacement interne */
+  z-index: 1000; /* S'assurer qu'elle reste au-dessus du contenu */
+}
+
+.contenu {
+  margin-top: 60px; /* Évite que le contenu soit caché derrière la bannière */
+  padding: 20px;
+}
+
+.header h1 {
+  font: italic bold 2.5rem verdana, sans-serif; /* Police relative */
+  margin: 0;
+  color: black;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.content {
+  font-size: 1rem;
+  max-width: 80%; /* Ajustez la largeur pour un design responsive */
+  margin-top: 20px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  box-shadow: 1px 1px 7px 7px #8AA7BC;
+  border-radius: 20px;
+}
+
+p {
+  font: italic bold verdana, sans-serif;
+  font-size: 2em;
+}
+
+.search-bar {
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 82px;
+  margin-bottom: 70px;
+  border-radius: 20px;
+}
+
+.search-bar input[type="text"] {
+  border-radius: 20px;
+  width: 70%;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #AADAD7;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #AADAD7;
+}
+
+.image-grid { 
+  display: grid;
+  grid-column: auto;
+  grid-auto-columns: max-content;
+  flex-wrap: wrap; /* Envelopper les images si elles ne tiennent pas */
+  flex-direction: column;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+  width: 100%; /* Prend la largeur complète */
+  margin: 0 auto; /* Centrage automatique */
+  padding: 20px;
+  gap: 50px; /* Espacement entre les images */
+  box-sizing: border-box;
+}
+
+.image-grid a {
+  display: block; /* Chaque image cliquable est un bloc */
+  text-align: center; /* Centrer le contenu textuel si nécessaire */
+}
+
+.image-grid a img {
+  max-width: 75%; /* Limite maximale */
+  border-radius: 15px; /* Coins arrondis */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto; /* Centrage si l'image dépasse */
+}
+
+.image-grid a img:hover {
+  transform: scale(1.12); 
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-contaier { 
+  background-color: grey;
+  border-radius: 20px;
+}
+
+.Nom, .Prenom, .Email, .Commentaire {
+  color: white;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #AADAD7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #AADAD7;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #AADAD7;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px;
+  margin-top: 20px;
+}
