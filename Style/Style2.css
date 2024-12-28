@@ -15,8 +15,8 @@ body {
     
 h1 {
     font: italic bold 2.5rem verdana, sans-serif; /* Police relative */
-    font-size: 1.5em;
-    padding: 3%;
+    font-size: 2.2em;
+    padding: 4%;
     color: black;
     text-decoration: underline;
     text-align: center;
@@ -30,18 +30,18 @@ h2 {
 }
     
 h3 {
-    font: italic 2.5rem verdana, sans-serif; /* Police relative */
+    font: italic bold 2.5rem verdana, sans-serif; /* Police relative */
     font-size: 2.5em;
-    padding: 3%;
+    padding: 4%;
     color: black;
     text-align: center;
 }
 
 p {
     margin-bottom: 0;
-    font: italic bold 2.5rem verdana, sans-serif; /* Police relative */
+    font: italic 2.5rem verdana, sans-serif; /* Police relative */
     font-size: 2em;
-    padding: 3%;
+    padding: 4%;
     color: black;
     text-align: center;
 }
