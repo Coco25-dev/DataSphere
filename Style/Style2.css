@@ -1,17 +1,16 @@
 body {
-    flex-direction: column;
     line-height: 1.6;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    background-color: lightgrey;
 }
 
-section {
-    color: aquamarine;
+.main-container {
+    background-color: lightgrey;
+    border-color: aquamarine;
     border-radius: 20px;
     border-width: 20px;
     margin-left: 10%;
     margin-right: 10%;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
 }
     
 h1 {
@@ -45,6 +44,10 @@ p {
     padding: 4%;
     color: black;
     text-align: center;
+}
+
+a {
+    color: black;
 }
 
 a:hover {
