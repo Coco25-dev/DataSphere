@@ -48,6 +48,7 @@ p {
 
 a {
     color: black;
+    display: inline-block; /* S'assurer qu'il s'affiche correctement */
 }
 
 a img {
