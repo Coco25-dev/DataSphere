@@ -4,8 +4,8 @@ body {
 
 .main-container {
     background-color: lightgrey;
-    border: 7px solid aquamarine; /* Bordure colorée */
-    border-radius: 20px; /* Coins arrondis */
+    border: 12px solid #ABD9D7; /* Bordure colorée */
+    border-radius: 25px; /* Coins arrondis */
     margin-left: 14%;
     margin-right: 14%;
     padding: 20px; /* Ajout d'un espace intérieur pour le contenu */
