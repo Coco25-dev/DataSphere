@@ -50,6 +50,12 @@ a {
     color: black;
 }
 
+a img {
+    display: block; /* Rendre visible l'image */
+    margin: 0 auto; /* Centrer l'image */
+    max-width: 100%; /* Assurer une bonne mise à l'échelle */
+}
+
 a:hover {
     color: #B169C9;
 }
