@@ -4,11 +4,11 @@ body {
 
 .main-container {
     background-color: lightgrey;
-    border-color: aquamarine;
-    border-radius: 20px;
-    border-width: 20px;
+    border: 7px solid aquamarine; /* Bordure colorée */
+    border-radius: 20px; /* Coins arrondis */
     margin-left: 14%;
     margin-right: 14%;
+    padding: 20px; /* Ajout d'un espace intérieur pour le contenu */
     flex-direction: column;
     font-family: Arial, sans-serif;
 }
